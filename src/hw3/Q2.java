@@ -8,19 +8,31 @@ public class Q2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("開始猜數字吧！ ");
-
 		int r = (int) (Math.random() * 10);
-		
+		System.out.println("開始猜數字吧！");
+
 		while (true) {
-			int num = sc.nextInt();			//輸入數值指定給num
-			
-			if(num == r) {
-				System.out.println("答對了！答案就是 " + num);
+			int num = sc.nextInt();
+			if (num == r) {
+				System.out.println("答對了！答案就是" + num);
 				break;
 			}
-			else {
-				System.out.println("猜錯囉！");
+			System.out.println("猜錯囉");
+		}
+
+		// 進階功能:產生0~100亂數,每次猜就會提示你是大於還是小於正確答案)
+		int r1 = (int) (Math.random() * 101);
+		System.out.println("開始猜數字吧！");
+
+		while (true) {
+			int num = sc.nextInt();
+			if (num == r1) {
+				System.out.println("答對了！答案就是" + num);
+				break;
+			} else if (num > r1) {
+				System.out.println("猜錯囉，提示；猜的數字大於正確答案");
+			} else {
+				System.out.println("猜錯囉，提示：猜的數字小於正確答案");
 			}
 		}
 	}
