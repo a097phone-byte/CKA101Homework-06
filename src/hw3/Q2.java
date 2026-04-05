@@ -30,7 +30,7 @@ public class Q2 {
 				System.out.println("答對了！答案就是" + num);
 				break;
 			} else if (num > r1) {
-				System.out.println("猜錯囉，提示；猜的數字大於正確答案");
+				System.out.println("猜錯囉，提示：猜的數字大於正確答案");
 			} else {
 				System.out.println("猜錯囉，提示：猜的數字小於正確答案");
 			}
