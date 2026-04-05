@@ -5,14 +5,18 @@ package hw4;
 public class Q2 {
 	
 	public static void main(String[] args){
+		String s1 = "Hello World";
+		char[] c1 = new char[s1.length()];
 		
-		String s = "Hello World";
-		String s1 = "";
-		
-		for(int i = s.length() - 1; i >= 0; i--) { 		//取用字串區域變數length方法須加()
-			s1 += s.charAt(i);
+		for(int i = 0; i < s1.length(); i++) {
+			c1[i] = s1.charAt(s1.length() - 1 - i);
 		}
-		System.out.println(s1);
+		
+		String result = "";
+		for(int i = 0; i < c1.length; i++) {
+			result += c1[i];
+		}
+		System.out.print(result);
 	}
 
 }
