@@ -45,8 +45,8 @@ public class Q3 {
 			for (int i = 0; i < selcount; i++) {
 				if (sel[i] == num) { 					// 發現重複
 				duplicate = true; 						// 標記為重複
-					break;
-				} 										// 不用再比，跳出迴圈
+					break;								// 不用再比，跳出迴圈
+				} 										
 			}
 			// 沒有重複才存進去
 			if (!duplicate) {
