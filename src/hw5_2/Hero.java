@@ -15,7 +15,7 @@ public abstract class Hero {
 		this.name = name;
 		this.level = level;
 		this.exp = exp;
-	}
+	}	
 	
 	public abstract void attack();
 	
